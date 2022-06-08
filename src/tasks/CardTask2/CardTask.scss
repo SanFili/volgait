@@ -1,0 +1,48 @@
+.headphones {
+  display: grid;
+  grid-template-areas:
+    "img title"
+    "img des";
+
+  @media (max-width: 1000px) {
+    display: flex;
+    flex-direction: column;
+    width: 525px;
+  }
+
+  &__title {
+    font: normal 300 32px/39px "Montserrat";
+    color: #2c2c2c;
+    text-align: start;
+    margin: 0 0 19px 0;
+    grid-area: title;
+    align-self: end;
+
+    @media (max-width: 1000px) {
+      margin-bottom: 17px;
+      align-self: start;
+    }
+  }
+
+  &__img {
+    width: calc((100vw - 138px) / 2);
+    object-fit: cover;
+    margin-right: 58px;
+    grid-area: img;
+
+    @media (max-width: 1000px) {
+      width: 100%;
+      margin: 0 0 18px 0;
+    }
+  }
+
+  &__text {
+    font: normal 300 18px/22px "Montserrat";
+    color: #2c2c2c;
+    opacity: 0.9;
+    text-align: start;
+    margin: 0;
+    grid-area: des;
+    align-self: start;
+  }
+}

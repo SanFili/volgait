@@ -1,0 +1,37 @@
+.rate {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 30px;
+  width: 550px;
+  margin: auto;
+
+  &__star {
+    fill: #d3d3d3;
+    transition: fill 0.3s;
+    cursor: pointer;
+
+    &:hover {
+      fill: #ffe8a0;
+
+      & ~ .rate__star {
+        fill: #ffe8a0;
+      }
+    }
+
+    &_active {
+      fill: #ffd245;
+
+      & ~ .rate__star {
+        fill: #ffd245;
+      }
+
+      &:hover {
+        fill: #ffd245;
+
+        & ~ .rate__star {
+          fill: #ffd245;
+        }
+      }
+    }
+  }
+}

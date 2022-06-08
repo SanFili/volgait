@@ -1,0 +1,42 @@
+.text {
+  width: 50vw;
+  font: normal 300 24px/39px "Montserrat";
+  opacity: 0.9;
+  text-align: start;
+
+  & span {
+    font-weight: 700;
+  }
+
+  & a {
+    padding: 7px;
+    color: #2c2c2c;
+    text-decoration: none;
+    background: linear-gradient(to right, #fff, #fff), linear-gradient(to right, #e0e0e0, #e0e0e0);
+    background-size: 100% 5px, 0 5px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 1s linear;
+
+    &:hover {
+      background-size: 0 5px, 100% 5px;
+    }
+  }
+
+  &_underlined {
+    & a {
+      padding: 7px;
+      color: #2c2c2c;
+      text-decoration: none;
+      background: linear-gradient(to right, #e0e0e0, #e0e0e0), linear-gradient(to right, #ffeda0, #ffeda0);
+      background-size: 100% 5px, 0 5px;
+      background-position: 100% 100%, 0 100%;
+      background-repeat: no-repeat;
+      transition: background-size 1s linear;
+
+      &:hover {
+        background-size: 0 5px, 100% 5px;
+      }
+    }
+  }
+}
