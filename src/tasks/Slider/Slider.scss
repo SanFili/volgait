@@ -8,19 +8,17 @@
   overflow: hidden;
 
   &__images {
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 597px;
+    transition: transform 0.5s ease-out;
   }
 
   &__image {
-    position: absolute;
     object-fit: contain;
     height: 597px;
-    transform: translateX(100%);
-    opacity: 0;
-    transition: transform 0.5s ease-out, opacity 0.5s;
   }
 
   &__buttons {
@@ -79,9 +77,8 @@
           opacity: 1;
         }
 
-        & ~ .slider__images .slider__image_blue {
+        & ~ .slider__images {
           transform: translateX(0);
-          opacity: 1;
         }
       }
     }
@@ -101,9 +98,8 @@
           opacity: 1;
         }
 
-        & ~ .slider__images .slider__image_pink {
-          transform: translateX(0);
-          opacity: 1;
+        & ~ .slider__images {
+          transform: translateX(-750px);
         }
       }
     }
@@ -123,9 +119,8 @@
           opacity: 1;
         }
 
-        & ~ .slider__images .slider__image_white {
-          transform: translateX(0);
-          opacity: 1;
+        & ~ .slider__images {
+          transform: translateX(-1450px);
         }
       }
     }

@@ -4,17 +4,17 @@ import cn from "classnames";
 
 const items = [
   {
-    image: "./images/podsBlue.png",
+    image: './images/podsBlue.png',
     color: "blue",
     id: 1,
   },
   {
-    image: "./images/podsPink.png",
+    image: './images/podsPink.png',
     color: "pink",
     id: 3,
   },
   {
-    image: "./images/podsWhite.png",
+    image: './images/podsWhite.png',
     color: "white",
     id: 2,
   },

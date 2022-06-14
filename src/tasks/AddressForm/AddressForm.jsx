@@ -70,7 +70,7 @@ const AddressForm = () => {
         </div>
         <div className={cn("form__options", opened && "form__options_opened")} ref={optionsRef}>
           {cities.map((city) => (
-            <label className="form__option">
+            <label key={city} className="form__option">
               <input
                 className="form__radio"
                 type="radio"
